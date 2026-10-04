@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Electronics</title>
+<link rel="stylesheet" href="../CSS/categories.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="main.html"><img src="../images/logo.jpg" alt=""></a>
+            <h2>MyShop</h2>
+        </div>
+        <div class="menu">
+            <a href="main.html">Home</a>
+            <a href="electronics.html">Electronics</a>
+            <a href="clothing.html">Clothing</a>
+            <a href="books.html">Books</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <a class="btn logout" href="../PHP/logout.php">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <section class="products">
+
+    <article class="product">
+        <h2>Smartphone</h2>
+        <img src="../images/phone.jpg" alt="phone">
+        <p><b>Price:</b> 85000 DA</p>
+        <p>Latest iPhone smartphone with great camera.</p>
+
+        <input type="number" min="1" value="1">
+        <button class="btn" onclick="addToCart('Smartphone', 85000, this.previousElementSibling)">
+            Add to Cart
+        </button>
+    </article>
+
+    <article class="product">
+        <h2>Laptop</h2>
+        <img src="../images/laptop.jpg" alt="laptop">
+        <p><b>Price:</b> 210000 DA</p>
+        <p>Powerful laptop for work and gaming.</p>
+
+        <input type="number" min="1" value="1">
+        <button class="btn" onclick="addToCart('Laptop', 210000, this.previousElementSibling)">
+            Add to Cart
+        </button>
+    </article>
+
+    <article class="product">
+        <h2>Headphones</h2>
+        <img src="../images/headphones.jpg" alt="headphones">
+        <p><b>Price:</b> 6000 DA</p>
+        <p>Noise cancelling wireless headphones.</p>
+
+        <input type="number" min="1" value="1">
+        <button class="btn" onclick="addToCart('Headphones', 6000, this.previousElementSibling)">
+            Add to Cart
+        </button>
+    </article>
+
+    </section>
+
+    <aside class="cart-summary">
+        <h3>Cart Summary</h3>
+        <p>Items: <span id="itemCount">0</span></p>
+        <p>Total: <span id="totalPrice">0</span> DA</p>
+    </aside>
+</main>
+
+<footer>
+    <button class="btn footerbtn" onclick="checkout()">Checkout</button>
+    <p>Final Total: <span id="finalTotal">0</span> DA</p>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1 class="create">Create Account</h1>
+        <p>Sign up with</p>
+    </div>
+
+    <div class="social-icons">
+        <i class='bx bxl-google'></i>
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-linkedin'></i>
+        <i class='bx bxl-github'></i>
+    </div>
+
+    <p class="or"><span>or</span></p>
+
+    <form action="../PHP/signup.php" method="POST">
+        <div class="inputs">
+            <input type="text" name="login" id="username" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="inputs">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <i class='bx bxs-envelope'></i>
+        </div>
+
+        <div class="inputs">
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <div class="inputs">
+            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <button class="btn signupbtn" type="submit">Sign Up</button>
+
+    </form>
+
+    <div class="login">
+        Already have an account? <a href="index.html">Login</a>
+    </div>
+</div>
+
+</body>
+</html>
